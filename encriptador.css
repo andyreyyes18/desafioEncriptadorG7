@@ -9,6 +9,7 @@ body {
     padding: 0;
 }
 
+/* Pie de pagina */
 footer {
     /* Color de fondo del pie de página */
     background-color: #0A3871;
@@ -119,6 +120,7 @@ main {
     font-size: 14px;
 }
 
+/* Estilos en comun de los tres botones */
 .btns {
     /* Uso de flexbox para botones */
     display: flex;
@@ -128,6 +130,7 @@ main {
     margin-top: 20px;
 }
 
+/* Estilos en comun de los tres botones */
 .btnEncriptar, .btnDesencriptar, .btnVaciar {
     /* Ancho del 48% del contenedor */
     width: 48%;
@@ -143,6 +146,7 @@ main {
     font-size: 18px;
 }
 
+ /* Boton de encriptar */
 .btnEncriptar {
     /* Fondo azul oscuro */
     background-color: #0A3871;
@@ -150,6 +154,7 @@ main {
     color: white;
 }
 
+ /* Boton de desencriptar */
 .btnDesencriptar {
     /* Fondo gris claro */
     background-color: #DBDFE8;
@@ -157,6 +162,7 @@ main {
     color: #0A3871;
 }
 
+ /* Boton de vaciar */
 .btnVaciar {
     /* Fondo gris claro */
     background-color: #DBDFE8;
@@ -180,40 +186,8 @@ main {
     text-align: center;
 }
 
-.no-message {
-    /* Uso de flexbox para diseño */
-    display: flex;
-    /* Colocar elementos en columna */
-    flex-direction: column;
-    /* Alinear elementos al centro */
-    align-items: center;
-    /* Justificación central */
-    justify-content: center;
-}
-
-.no-message img {
-    /* Ancho de la imagen */
-    width: 150px;
-    /* Espaciado inferior */
-    margin-bottom: 20px;
-}
-
-.no-message p {
-    /* Tamaño de fuente */
-    font-size: 18px;
-    /* Texto en negrita */
-    font-weight: bold;
-    /* Color del texto */
+.titulo {
     color: #0A3871;
-}
-
-.no-message span {
-    /* Tamaño de fuente */
-    font-size: 14px;
-    /* Color del texto adicional */
-    color: #495057;
-    /* Espaciado superior */
-    margin-top: 10px;
 }
 
 /* Estilos para el botón de copiar en la lista */
