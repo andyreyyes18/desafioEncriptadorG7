@@ -142,7 +142,6 @@ main {
     margin-top: 10px;
 }
 
-
 /* Estilos para el botón de copiar en la lista */
 .copiar-btn {
     background: none;
@@ -160,4 +159,54 @@ main {
 
 .copiar-btn:hover img {
     filter: invert(36%) sepia(95%) saturate(3438%) hue-rotate(190deg) brightness(95%) contrast(96%);
+}
+
+/* Media Queries para hacer la página responsiva */
+
+/* Para dispositivos con un ancho máximo de 768px (tablets) */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        height: auto;
+        gap: 30px;
+        padding: 20px;
+    }
+    
+    .input-section, .output-section {
+        width: 80%;
+    }
+
+    .btnEncriptar, .btnDesencriptar, .btnVaciar {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* Para dispositivos con un ancho máximo de 480px (celulares) */
+@media (max-width: 480px) {
+    .logo {
+        width: 40px;
+        margin: 10px;
+    }
+
+    .input-section, .output-section {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .btnEncriptar, .btnDesencriptar, .btnVaciar {
+        width: 100%;
+        margin-top: 10px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .text-area {
+        height: 120px;
+        font-size: 16px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
 }
