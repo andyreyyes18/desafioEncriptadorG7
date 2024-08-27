@@ -1,0 +1,288 @@
+/* Color de fondo del cuerpo */
+body {
+    background-color: #F3F5FC;
+    /* Fuente para todo el documento */
+    font-family: 'Inter', sans-serif;
+    /* Eliminar márgenes predeterminados */
+    margin: 0;
+    /* Eliminar padding predeterminado */
+    padding: 0;
+}
+
+/* Pie de pagina */
+footer {
+    /* Color de fondo del pie de página */
+    background-color: #0A3871;
+    /* Color del texto en el pie de página */
+    color: white;
+    /* Alinear texto al centro */
+    text-align: center;
+    /* Espaciado superior e inferior */
+    padding: 10px 0;
+    /* Posición fija en la parte inferior */
+    position: fixed;
+    /* Ancho completo */
+    width: 100%;
+    /* Posición en la parte inferior */
+    bottom: 0;
+    /* Posición alineada a la izquierda */
+    left: 0;
+}
+
+footer p {
+    /* Eliminar margen predeterminado */
+    margin: 0;
+    /* Tamaño de fuente del texto */
+    font-size: 14px;
+}
+
+footer a {
+    /* Color de los enlaces en el pie de página */
+    color: #ffffff;
+    /* Sin subrayado en los enlaces */
+    text-decoration: none;
+}
+
+footer a:hover {
+    /* Subrayado al pasar el ratón */
+    text-decoration: underline;
+}
+
+/* logo de alura */
+.logo {
+    /* Espaciado alrededor del logo */
+    margin: 20px;
+    /* Ancho del logo */
+    width: 50px;
+}
+
+main {
+    /* Uso de flexbox para diseño */
+    display: flex;
+    /* Centrar horizontalmente */
+    justify-content: center;
+    /* Centrar verticalmente */
+    align-items: center;
+    /* Altura del 80% de la ventana */
+    height: 80vh;
+    /* Espacio entre secciones */
+    gap: 50px;
+}
+
+/* Sección de entrada */
+.input-section {
+    /* Fondo blanco */
+    background-color: #FFFFFF;
+    /* Espaciado interno */
+    padding: 40px;
+    /* Bordes redondeados */
+    border-radius: 12px;
+    /* Sombra ligera */
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    /* Ancho del 40% de la pantalla */
+    width: 40%;
+}
+
+.text-area {
+    /* Ancho completo */
+    width: 100%;
+    /* Altura del área de texto */
+    height: 150px;
+    /* Sin borde */
+    border: none;
+    /* Bordes redondeados */
+    border-radius: 8px;
+    /* Espaciado interno */
+    padding: 20px;
+    /* Tamaño de fuente */
+    font-size: 18px;
+    /* Color del texto */
+    color: #0A3871;
+    /* Deshabilitar redimensionamiento */
+    resize: none;
+}
+
+.text-area::placeholder {
+    /* Color del texto de marcador */
+    color: #0A3871;
+}
+
+.text-area:focus {
+    /* Sin borde de enfoque */
+    outline: none;
+}
+
+.info {
+    /* Espaciado superior */
+    margin-top: 10px;
+    /* Color del texto informativo */
+    color: #495057;
+    /* Tamaño de fuente del texto */
+    font-size: 14px;
+}
+
+/* Estilos en comun de los tres botones */
+.btns {
+    /* Uso de flexbox para botones */
+    display: flex;
+    /* Espacio entre botones */
+    justify-content: space-between;
+    /* Espaciado superior */
+    margin-top: 20px;
+}
+
+/* Estilos en comun de los tres botones */
+.btnEncriptar, .btnDesencriptar, .btnVaciar {
+    /* Ancho del 48% del contenedor */
+    width: 48%;
+    /* Altura de los botones */
+    height: 50px;
+    /* Bordes redondeados */
+    border-radius: 8px;
+    /* Sin borde */
+    border: none;
+    /* Cambiar cursor al pasar sobre el botón */
+    cursor: pointer;
+    /* Tamaño de fuente del texto */
+    font-size: 18px;
+}
+
+ /* Boton de encriptar */
+.btnEncriptar {
+    /* Fondo azul oscuro */
+    background-color: #0A3871;
+    /* Texto en blanco */
+    color: white;
+}
+
+ /* Boton de desencriptar */
+.btnDesencriptar {
+    /* Fondo gris claro */
+    background-color: #DBDFE8;
+    /* Texto en azul oscuro */
+    color: #0A3871;
+}
+
+ /* Boton de vaciar */
+.btnVaciar {
+    /* Fondo gris claro */
+    background-color: #DBDFE8;
+    /* Texto en azul oscuro */
+    color: #0A3871;
+}
+
+/* Sección de salida */
+.output-section {
+    /* Fondo blanco */
+    background-color: #FFFFFF;
+    /* Espaciado interno */
+    padding: 40px;
+    /* Bordes redondeados */
+    border-radius: 12px;
+    /* Sombra ligera */
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    /* Ancho del 25% de la pantalla */
+    width: 25%;
+    /* Texto centrado */
+    text-align: center;
+}
+
+.titulo {
+    color: #0A3871;
+}
+
+/* Estilos para el botón de copiar en la lista */
+.copiar-btn {
+    /* Sin fondo */
+    background: none;
+    /* Sin borde */
+    border: none;
+    /* Cambiar cursor al pasar sobre el botón */
+    cursor: pointer;
+    /* Espaciado a la izquierda */
+    margin-left: 10px;
+    /* Alineación vertical */
+    vertical-align: middle;
+}
+
+.copiar-btn img {
+    /* Ancho de la imagen */
+    width: 20px;
+    /* Altura de la imagen */
+    height: 20px;
+    /* Filtro de color para la imagen */
+    filter: invert(60%) sepia(8%) saturate(457%) hue-rotate(168deg) brightness(87%) contrast(85%);
+}
+
+.copiar-btn:hover img {
+    /* Filtro al pasar el ratón */
+    filter: invert(36%) sepia(95%) saturate(3438%) hue-rotate(190deg) brightness(95%) contrast(96%);
+}
+
+/* Media Queries para hacer la página responsiva */
+
+/* Para dispositivos con un ancho máximo de 768px (tablets) */
+@media (max-width: 768px) {
+    main {
+        /* Cambiar a diseño de columna */
+        flex-direction: column;
+        /* Altura automática */
+        height: auto;
+        /* Espaciado entre secciones */
+        gap: 30px;
+        /* Espaciado interno */
+        padding: 20px;
+    }
+    
+    .input-section, .output-section {
+        /* Ancho del 80% de la pantalla */
+        width: 80%;
+    }
+
+    .btnEncriptar, .btnDesencriptar, .btnVaciar {
+        /* Ancho completo */
+        width: 100%;
+        /* Espaciado superior */
+        margin-top: 10px;
+    }
+}
+
+/* Para dispositivos con un ancho máximo de 480px (celulares) */
+@media (max-width: 480px) {
+    .logo {
+        /* Ancho del logo */
+        width: 40px;
+        /* Espaciado alrededor del logo */
+        margin: 10px;
+    }
+
+    .input-section, .output-section {
+        /* Ancho del 90% de la pantalla */
+        width: 90%;
+        /* Espaciado interno */
+        padding: 20px;
+    }
+
+    .btnEncriptar, .btnDesencriptar, .btnVaciar {
+        /* Ancho completo */
+        width: 100%;
+        /* Espaciado superior */
+        margin-top: 10px;
+        /* Altura de los botones */
+        height: 45px;
+        /* Tamaño de fuente del texto */
+        font-size: 16px;
+    }
+
+    .text-area {
+        /* Altura del área de texto */
+        height: 120px;
+        /* Tamaño de fuente del texto */
+        font-size: 16px;
+    }
+
+    footer p {
+        /* Tamaño de fuente del texto en el pie de página */
+        font-size: 12px;
+    }
+}
