@@ -141,3 +141,23 @@ main {
     color: #495057;
     margin-top: 10px;
 }
+
+
+/* Estilos para el botón de copiar en la lista */
+.copiar-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.copiar-btn img {
+    width: 20px;
+    height: 20px;
+    filter: invert(60%) sepia(8%) saturate(457%) hue-rotate(168deg) brightness(87%) contrast(85%);
+}
+
+.copiar-btn:hover img {
+    filter: invert(36%) sepia(95%) saturate(3438%) hue-rotate(190deg) brightness(95%) contrast(96%);
+}
