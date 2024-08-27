@@ -1,51 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Metadatos básicos del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Enlace al archivo CSS -->
     <link rel="stylesheet" href="encriptador.css">
+    <!-- Preconexión a Google Fonts para mejorar rendimiento -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Enlace a la fuente "Inter" desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Encabezado con logo -->
     <header>
         <img src="imgs/Logo.png" alt="Alura Logo" class="logo">
     </header>
 
+    <!-- Sección principal del contenido -->
     <main>
+        <!-- Sección para la entrada de texto -->
         <section class="input-section">
+            <!-- Área de texto para ingresar datos -->
             <textarea class="text-area" placeholder="Ingrese el texto aquí"></textarea>
+            <!-- Información adicional sobre las reglas de ingreso -->
             <div class="info">
                 <p>Solo letras minúsculas y sin acentos</p>
             </div>
+            <!-- Botones para encriptar y desencriptar -->
             <div class="btns">
                 <button class="btnEncriptar" onclick="btnEncriptar()">Encriptar</button>
                 <button class="btnDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
             </div>
         </section>
 
+        <!-- Sección para mostrar los resultados -->
         <section class="output-section">
+            <!-- Imagen decorativa -->
             <img src="imgs/Muñeco.png" alt="foto">
+            <!-- Sección para mostrar textos encriptados -->
             <div class="encriptadas-section">
                 <h2>Encriptadas</h2>
                 <ul class="lista-encriptadas"></ul>
             </div>
 
+            <!-- Sección para mostrar textos desencriptados -->
             <div class="desencriptadas-section">
                 <h2>Desencriptadas</h2>
                 <ul class="lista-desencriptadas"></ul>
             </div>
 
+            <!-- Botón para vaciar las listas de resultados -->
             <button class="btnVaciar" onclick="vaciarListas()">Vaciar Listas</button>
         </section>
     </main>
 
+    <!-- Pie de página con créditos -->
     <footer>
         <p>Creado por <a href="https://github.com/andyreyyes18" target="_blank" rel="noopener noreferrer">@Andy Reyes García</a> | &copy;2024 | Para: Desafío encriptador ONE G7</p>
     </footer>
 
+    <!-- Enlace al archivo JavaScript -->
     <script src="encriptador.js"></script>
 </body>
 </html>
